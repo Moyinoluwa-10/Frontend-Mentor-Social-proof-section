@@ -1,0 +1,241 @@
+:root{
+    
+    /* Colors */
+
+    /* Primary */
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    padding: 100px 100px;
+}
+
+/* Styling Header */
+#head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+#header{
+    margin-left: 15px;
+}
+
+h2{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    font-size: 45px;
+    margin-left: 20px;
+    line-height: 43px;
+}
+
+#head >div >p{
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 22px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/* Styling Rating Section */
+#rates{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.rate{
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rate br{
+    display: none;
+}
+
+.rating{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;    
+}
+
+#rate1{
+    margin-right: 80px;
+    margin-left: 20px;    
+}
+
+#rate2{
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+#rate3{
+    margin-left: 100px;
+}
+
+/* Styling Comment Section */
+#body{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.section{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px 40px;
+    border-radius: 7px;
+}
+
+.profile{
+    display: flex;
+    line-height: 18px;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.image >img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.top{
+    color: var(--Light-Grayish-Magenta);
+}
+
+.bottom{
+    color: var(--Soft-Pink);
+    font-size: 14px;
+}
+
+.section >p{
+    color: var(--Light-Grayish-Magenta);
+}
+
+#section1{
+    margin-bottom: 80px;
+}
+
+#section2{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#section3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}   
+
+/* Responsiveness */
+@media screen and (max-width:450px) {
+    body{
+        padding: 0 25px;
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
+    }
+    
+    /* Styling Header */
+    #head{
+        flex-direction: column;
+    }
+
+    #head >div > h2{
+        text-align: center;
+        font-size: 42px;
+    }
+
+    #head >div > p{
+        text-align: center;
+    }
+
+    #head >div > p >br{
+        display: none;
+    }
+
+    #header{
+        margin-bottom: 30px;
+    }
+
+/* Styling Rating Section */
+    #rates{
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    .rate br{
+        display: block;
+    }
+
+    #rate1{
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    #rate2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    #rate3{
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    #rating{
+        margin: 0 auto;    
+    }
+
+    /* Styling Comment Section */
+    #body{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #body >div >p{
+        line-height: 20px;
+    }
+
+    #body >div >p >br{
+        display: none;
+    }
+
+    #section1{
+        margin: 0;
+    }
+
+    #section2{
+        margin: 0;
+    }
+
+    #section3{
+        margin: 0;
+        margin-bottom: 70px;
+    }
+}
