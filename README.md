@@ -1,1 +1,1 @@
-# Project_5
+# Frontend Mentor | Social proof section solution
